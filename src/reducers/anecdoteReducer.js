@@ -31,6 +31,10 @@ const reducer = (state = initialState, action) => {
 
     }
 
+    case 'NEW': {
+      return [...state, action.data]
+    }
+
     default:
       return state
   }
@@ -45,6 +49,17 @@ export const voteFor = (id) => {
     }
   )
 
+}
+
+export const createAnecdote = (anecdote) => {
+
+  return ({
+    type: 'NEW',
+    data: {
+      content: anecdote,
+    }
+    
+  })
 }
 
 export default reducer
