@@ -5,7 +5,7 @@ import {voteFor} from '../reducers/anecdoteReducer'
 const Anecdote = ({anecdote, onClick}) => {
   return (
     <div>
-      {anecdote.content} has {anecdote.votes}<br />
+      {anecdote.content} has {anecdote.votes}
       <button onClick={onClick}> vote</button>
     </div>
   );

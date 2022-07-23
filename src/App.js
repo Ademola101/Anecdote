@@ -1,6 +1,6 @@
 
 import NewAnecdote from './components/NewAnecdote'
-import Anecdotes from './components/Anecdotes'
+import Anecdotes from './components/AnecdoteList'
 const App = () => {
   
 
