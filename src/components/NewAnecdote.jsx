@@ -1,7 +1,7 @@
 import React from 'react'
 import {useDispatch} from 'react-redux'
 import {createAnecdote} from '../reducers/anecdoteReducer'
-import {setNotification} from '../reducers/NotificationReducer'
+import {setNotification, createNotification} from '../reducers/NotificationReducer'
 export default function NewAnecdote() {
   const dispatch = useDispatch()
   const add = (e) => {
@@ -11,7 +11,8 @@ export default function NewAnecdote() {
     
     e.target.anecdote.value =''
     dispatch(createAnecdote(anecdote))
-    dispatch(setNotification(`${anecdote} anecdote created`))
+    dispatch(createNotification(`${anecdote} anecdote created`,5))
+    
   }
   
 
