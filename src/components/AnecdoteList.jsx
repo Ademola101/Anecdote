@@ -19,10 +19,10 @@ const Anecdotes = () => {
 
   const anecdotes = useSelector(state => state.anecdotes)
   const anecdotesForSort = [...anecdotes]
-  console.log(anecdotesForSort)
+  
   // dont mutate state directly
   const anecdotesSorted = anecdotesForSort.sort((a, b) => b.votes-a.votes)
-  console.log(anecdotesSorted);
+  
   const dispatch = useDispatch()
   return (
     <div>
