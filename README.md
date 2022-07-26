@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Anecdotes - The voting system
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<table>
+<tr>
+<td>
+  <!-- Prohub provides you one safe place for all the projects created in your Institute! -->
+</td>
+</tr>
+</table>
 
-## Available Scripts
+# Project Description
 
-In the project directory, you can run:
+## Problem Description
 
-### `npm start`
+<!-- > Students are unaware of project that are already built.
+Difficulties in selecting innovative and unique ideas.
+Project idea will get rejected if it is already done.
+Again they need to put lots of efforts to find different project ideas. -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Solution
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<!-- > We brought all project works and details on single platform -
+To avoid project ideas from getting repeated,
+To take up unique and innovative project works,
+To provide common knowledge platform for peer learning. -->
 
-### `npm test`
+<hr>
+<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Demo
 
-### `npm run build`
+<!-- Here is a working Demo : <https://Prohub.herokuapp.com/> -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Built with
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [React JS](https://reactjs.org/)
+- [Node JS](https://nodejs.org/)
+- [Express JS](https://expressjs.com/)
+- [Mongo DB](https://www.mongodb.com/)
+- [Material UI](https://mui.com/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Setup
 
-### `npm run eject`
+## Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<br>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### <a href ="https://www.geeksforgeeks.org/installation-of-node-js-on-windows/" target="_blank"> Nodejs Installed in your system<a/>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### <a href ="https://www.geeksforgeeks.org/ultimate-guide-git-github/?ref=gcse" target="_blank">Knowledge of Git and GitHub<a/>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### <p> <a href ="https://code.visualstudio.com/docs/setup/windows">Install VS CODE </a> or any other IDE </p>
 
-## Learn More
+<br>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Intialization
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<br>
 
-### Code Splitting
+### To Contribute give the repo a Star⭐️ and Fork it
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<br>
+<img src ="readme_assets/star_fork.png"></img>
 
-### Analyzing the Bundle Size
+### Clone the repo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img src ="readme_assets/clone.png"></img>
 
-### Making a Progressive Web App
+```
+git clone https://github.com/Ademola101/Anecdote.git
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+<!-- <img src ="readme_assets/images/clone.png"></img> -->
 
-### Advanced Configuration
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Open Terminal on the Folder
 
-### Deployment
+```
+cd Anecdote
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<br>
 
-### `npm run build` fails to minify
+### Checkout to the `dev` branch
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+git checkout -b dev
+```
+<!-- 
+<br>
+
+### Go the the `client` directory
+
+```
+cd client
+```
+
+<br>
+ -->
+### Install the Dependencies
+
+```
+npm install
+```
+
+### Update the Dependencies
+
+```
+npm update
+```
+
+<!-- ### Go to the server folder & do the same (install and update)
+
+```
+cd ../server
+```
+
+<br> -->
+
+<!-- ## Team
+
+[![Pranay Kharabe](https://avatars1.githubusercontent.com/u/68046838?v=3&s=144)](https://github.com/pranay202)
+
+[![Samyak Shambharkar](https://avatars1.githubusercontent.com/u/86425573?v=3&s=144)](https://github.com/samyakshambharkar) -->
+
+<!-- [![Ruchika Parshionikar](https://avatars1.githubusercontent.com/u/86425573?v=3&s=144)](https://github.com/samyakshambharkar) -->
+
+👤 **Author**
+
+- GitHub: [@Ademola101](https://github.com/Ademola101)
+- Twitter: [@ademola_isr](https://twitter.com/ademola_isr)
+- LinkedIn: [Ademola Ogunmokun](https://linkedin.com/in/ademola-ogunmokun-492575203)
+
+Copyright © 2022 [Ademola Ogunmokun](https://github.com/Ademola101)

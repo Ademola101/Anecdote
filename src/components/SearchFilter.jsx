@@ -4,6 +4,7 @@ import {useDispatch} from 'react-redux'
 import { setFilter } from '../reducers/filterReducer'
 export default function SearchFilter() {
 
+  
   const dispatch = useDispatch()
   
   const onChange = (e) => {
