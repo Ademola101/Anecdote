@@ -70,7 +70,7 @@ To provide common knowledge platform for peer learning. -->
 git clone https://github.com/Ademola101/Anecdote.git
 ```
 
-<!-- <img src ="readme_assets/images/clone.png"></img> -->
+<img src ="readme-asset/images/clone.png"></img>
 
 <br>
 
