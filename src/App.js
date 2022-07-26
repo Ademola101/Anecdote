@@ -1,10 +1,10 @@
 
-import NewAnecdote from './components/NewAnecdote'
-import Anecdotes from './components/AnecdoteList'
-import Notification from './components/Notification'
-import SearchFilter from './components/SearchFilter'
+import NewAnecdote from './components/NewAnecdote';
+import Anecdotes from './components/AnecdoteList';
+import Notification from './components/Notification';
+import SearchFilter from './components/SearchFilter';
 const App = () => {
-  
+
 
 
   return (
@@ -13,10 +13,10 @@ const App = () => {
       <Notification/>
       <SearchFilter/>
       <Anecdotes/>
-      
-      <NewAnecdote/>
-       </div>
-  )
-}
 
-export default App
+      <NewAnecdote/>
+    </div>
+  );
+};
+
+export default App;
