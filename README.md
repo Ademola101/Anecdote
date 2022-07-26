@@ -60,7 +60,7 @@ To provide common knowledge platform for peer learning. -->
 ### To Contribute give the repo a Star⭐️ and Fork it
 
 <br>
-<img src ="readme_assets/star_fork.png"></img>
+<img src ="readme-asset/star_fork.png"></img>
 
 ### Clone the repo
 
