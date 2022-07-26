@@ -17,8 +17,17 @@ const Anecdote = ({anecdote, onClick}) => {
 
 const Anecdotes = () => {
 
-  const anecdotes = useSelector(state => state)
-  const anecdotesSorted = anecdotes.sort((a, b) => b.votes-a.votes)
+  const anecdotes = useSelector(({filter, anecdotes}) => { 
+
+    return filter ? anecdotes.filter(anecdote => anecdote.content.toLowerCase().startsWith(filter.toLowerCase())) :
+    anecdotes
+
+
+  })
+  const anecdotesForSort = [...anecdotes]
+  
+  // dont mutate state directly
+  const anecdotesSorted = anecdotesForSort.sort((a, b) => b.votes-a.votes)
   
   const dispatch = useDispatch()
   return (

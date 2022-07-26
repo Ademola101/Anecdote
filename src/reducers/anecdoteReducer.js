@@ -1,3 +1,5 @@
+import { createSlice } from '@reduxjs/toolkit'
+
 const anecdotesAtStart = [
   'If it hurts, do it more often',
   'Adding manpower to a late software project makes it later!',
@@ -20,53 +22,51 @@ const asObject = (anecdote) => {
 const initialState = anecdotesAtStart.map(asObject)
 
 
-const reducer = (state = initialState, action) => {
-  
 
-  switch(action.type) {
-    case 'VOTE' : {
-      const id  = action.data.id
-      const anecdote = state.find(a => a.id === id)
-      const changeAnecdote =  {...anecdote, votes: anecdote.votes + 1}
-      return state.map(anecdote => anecdote.id !== id ? anecdote : changeAnecdote)
+// export const voteFor = (id) => {
 
-    }
+//   return (
+//     {
+//       type: 'VOTE',
+//       data: {id}
+//     }
+//   )
 
-    case 'NEW': {
-      return [...state, action.data]
-    }
+// }
 
-    default:
-      
-      return state
-      
-  }
+// export const createAnecdote = (anecdote) => {
 
-  
-}
-
-export const voteFor = (id) => {
-
-  return (
-    {
-      type: 'VOTE',
-      data: {id}
-    }
-  )
-
-}
-
-export const createAnecdote = (anecdote) => {
-
-  return ({
-    type: 'NEW',
-    data: {
-      content: anecdote,
-      votes:0,
-      id:getId()
-    }
+//   return ({
+//     type: 'NEW',
+//     data: {
+//       content: anecdote,
+//       votes:0,
+//       id:getId()
+//     }
     
-  })
-}
+//   })
+// }
 
-export default reducer
+
+const anecdoteSlice = createSlice({
+  initialState,
+  name: 'anecdote',
+  reducers: {
+    createAnecdote(state, action) {
+      const content = action.payload
+      return [...state, {content, id: getId(), votes: 0}]
+    },
+
+    voteFor(state,action) {
+      const id = action.payload
+      const anecdote = state.find(a => a.id === id)
+      const changedAnecdote = {...anecdote, votes: anecdote.votes + 1}
+
+      return state.map(anecdote => anecdote.id !== id ? anecdote : changedAnecdote)
+    }
+  }
+})
+
+export const {createAnecdote, voteFor} = anecdoteSlice.actions
+export default anecdoteSlice.reducer
+
