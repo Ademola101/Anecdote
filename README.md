@@ -64,13 +64,13 @@ To provide common knowledge platform for peer learning. -->
 
 ### Clone the repo
 
-<img src ="readme_assets/clone.png"></img>
+<img src ="readme-asset/clone.png"></img>
 
 ```
 git clone https://github.com/Ademola101/Anecdote.git
 ```
 
-<img src ="readme-asset/images/clone.png"></img>
+
 
 <br>
 
