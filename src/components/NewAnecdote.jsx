@@ -1,7 +1,7 @@
 import React from 'react'
 import {useDispatch} from 'react-redux'
 import {createAnecdote} from '../reducers/anecdoteReducer'
-import {setNotification, createNotification} from '../reducers/NotificationReducer'
+import { createNotification} from '../reducers/NotificationReducer'
 export default function NewAnecdote() {
   const dispatch = useDispatch()
   const add = (e) => {

@@ -17,7 +17,13 @@ const Anecdote = ({anecdote, onClick}) => {
 
 const Anecdotes = () => {
 
-  const anecdotes = useSelector(state => state.anecdotes)
+  const anecdotes = useSelector(({filter, anecdotes}) => { 
+
+    return filter ? anecdotes.filter(anecdote => anecdote.content.toLowerCase().startsWith(filter.toLowerCase())) :
+    anecdotes
+
+
+  })
   const anecdotesForSort = [...anecdotes]
   
   // dont mutate state directly
