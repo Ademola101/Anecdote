@@ -64,7 +64,7 @@ To provide common knowledge platform for peer learning. -->
 
 ### Clone the repo
 
-<img src ="readme-asset/clone.png"></img>
+<!-- <img src ="readme-asset/clone.png"></img> -->
 
 ```
 git clone https://github.com/Ademola101/Anecdote.git
