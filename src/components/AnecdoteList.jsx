@@ -1,15 +1,15 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux'
-import {voteFor} from '../reducers/anecdoteReducer'
+import { useDispatch, useSelector } from 'react-redux';
+import { voteFor } from '../reducers/anecdoteReducer';
 
-const Anecdote = ({anecdote, onClick}) => {
+const Anecdote = ({ anecdote, onClick }) => {
   return (
     <div>
       {anecdote.content} has {anecdote.votes}
       <button onClick={onClick}> vote</button>
     </div>
   );
-}
+};
 
 
 
@@ -17,27 +17,28 @@ const Anecdote = ({anecdote, onClick}) => {
 
 const Anecdotes = () => {
 
-  const anecdotes = useSelector(({filter, anecdotes}) => { 
+  const anecdotes = useSelector(({ filter, anecdotes }) => {
+
 
     return filter ? anecdotes.filter(anecdote => anecdote.content.toLowerCase().startsWith(filter.toLowerCase())) :
-    anecdotes
+      anecdotes;
 
 
-  })
-  const anecdotesForSort = [...anecdotes]
-  
+  });
+  const anecdotesForSort = [...anecdotes];
+
   // dont mutate state directly
-  const anecdotesSorted = anecdotesForSort.sort((a, b) => b.votes-a.votes)
-  
-  const dispatch = useDispatch()
+  const anecdotesSorted = anecdotesForSort.sort((a, b) => b.votes-a.votes);
+
+  const dispatch = useDispatch();
   return (
     <div>
       {anecdotesSorted.map(anecdote => {
-        return(<Anecdote key={anecdote.id} anecdote={anecdote} onClick={() => dispatch(voteFor(anecdote.id))}/>)
+        return(<Anecdote key={anecdote.id} anecdote={anecdote} onClick={() => dispatch(voteFor(anecdote.id))}/>);
       })}
-      
+
     </div>
   );
-}
+};
 
 export default Anecdotes;
