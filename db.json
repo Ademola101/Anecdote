@@ -30,7 +30,6 @@
       "id": "98312",
       "votes": 0
     },
-    
     {
       "content": "new anecdote",
       "votes": 0,
@@ -70,6 +69,16 @@
       "content": "issue",
       "votes": 0,
       "id": "non9QHg"
+    },
+    {
+      "content": "error",
+      "votes": 0,
+      "id": "5mk7gL7"
+    },
+    {
+      "content": "solved error",
+      "votes": 0,
+      "id": "iy3A6S-"
     }
   ]
 }

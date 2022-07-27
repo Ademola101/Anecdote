@@ -18,7 +18,7 @@ const Anecdote = ({ anecdote, onClick }) => {
 const Anecdotes = () => {
 
   const anecdotes = useSelector(({ filter, anecdotes }) => {
-    console.log(anecdotes);
+
 
     return filter ? anecdotes.filter(anecdote => anecdote.content.toLowerCase().startsWith(filter.toLowerCase())) :
       anecdotes;
