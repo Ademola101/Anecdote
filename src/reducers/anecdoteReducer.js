@@ -90,6 +90,7 @@ export const createAnecdote = (content) => {
 
   return async dispatch => {
     const anecdote = await anecdoteServices.createNew(content);
+    console.log(anecdote);
     dispatch(appendAnecdotes(anecdote));
   };
 };
