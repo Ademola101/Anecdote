@@ -34,7 +34,7 @@ const Anecdotes = () => {
   return (
     <div>
       {anecdotesSorted.map(anecdote => {
-        return(<Anecdote key={anecdote.id} anecdote={anecdote} onClick={() => dispatch(voteFor(anecdote.id))}/>);
+        return(<Anecdote key={anecdote.id} anecdote={anecdote} onClick={() => dispatch(voteFor(anecdote))}/>);
       })}
 
     </div>
