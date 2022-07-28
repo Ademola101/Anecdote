@@ -22,10 +22,18 @@ const createNew = async(content) => {
 
 };
 
+const update = async (anecdote) => {
+  const { id } = anecdote;
+  const vote = { votes: anecdote.votes + 1 };
+  const response = await  axios.patch(`${baseUrl}/${id}`, vote);
+  return response.data;
+};
+
 
 const anecdoteServices = {
   getAll,
-  createNew
+  createNew,
+  update
 };
 
 
