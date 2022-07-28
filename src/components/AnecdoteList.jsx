@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { voteFor } from '../reducers/anecdoteReducer';
+import { createNotification } from '../reducers/NotificationReducer';
 
 const Anecdote = ({ anecdote, onClick }) => {
   return (
@@ -30,11 +31,17 @@ const Anecdotes = () => {
   // dont mutate state directly
   const anecdotesSorted = anecdotesForSort.sort((a, b) => b.votes-a.votes);
 
+
   const dispatch = useDispatch();
+
+  const handleVote = (anecdote) => {
+    dispatch(voteFor(anecdote));
+    dispatch(createNotification(`${anecdote.content} receives a vote`, 5));
+  };
   return (
     <div>
       {anecdotesSorted.map(anecdote => {
-        return(<Anecdote key={anecdote.id} anecdote={anecdote} onClick={() => dispatch(voteFor(anecdote))}/>);
+        return(<Anecdote key={anecdote.id} anecdote={anecdote} onClick={() => handleVote(anecdote)}/>);
       })}
 
     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { createAnecdote } from '../reducers/anecdoteReducer';
+import { createNotification } from '../reducers/NotificationReducer';
 
 
 
@@ -13,6 +14,7 @@ export default function NewAnecdote() {
 
     e.target.anecdote.value ='';
     dispatch(createAnecdote(content));
+    dispatch(createNotification(`${content} anecdote added`, 5));
 
 
   };
